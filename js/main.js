@@ -19,7 +19,6 @@ function filtrarJugadores(){
     const resultado = jugadores.filter(filtrarPais);
     if(resultado.length>0){
         mostrarJugadores(resultado);
-        document.write(resultado);
     }else{
         console.log('sin resultados')
     }
