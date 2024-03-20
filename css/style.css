@@ -20,3 +20,10 @@ nav{
 .total{
     font-size: 30px;
 }
+a{
+    text-decoration: none;
+    color: #f7323f;
+}
+a:hover{
+    color: #ffffff
+}
