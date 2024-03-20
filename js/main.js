@@ -43,7 +43,7 @@ while(elegirCarrera == "coderhouse"){
             console.log(`distancias elegida: ${carritoFinal.distanciaCoderhouse}, total a pagar ${carritoFinal.precio}`)
             document.body.innerHTML = `
             <div class="card row" id= card>
-                <div class="card-body text-center col-sm-12">
+                <div class="card-body text-center col-sm-12 m-2">
                     <h1 class="compraFinal">Compra Realizada con éxito.</h1><br>
                     <p>Distancia elegida : ${carritoFinal.distanciaCoderhouse}</p> <br>
                     <p class="total">Total a pagar : ${carritoFinal.precio}</p>
