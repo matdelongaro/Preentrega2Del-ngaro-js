@@ -1,0 +1,22 @@
+
+nav{
+    background-color: #f7323f;
+}
+#menuburger{
+    background-color: #ffffff;
+    color: #f7323f;
+}
+#card{
+    margin: 200px;
+    padding: 50px;
+    font-size: 30px;
+    background-color: #f7323f ;
+    color: #ffffff;
+}
+.compraFinal{
+    font-weight: 800;
+}
+
+.total{
+    font-size: 30px;
+}

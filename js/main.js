@@ -1,4 +1,4 @@
-let elegirCarrera = prompt("Bienvenido, que carrera va a correr. ¿CoderHouse o CodeRun?");
+let elegirCarrera = prompt("Bienvenido, hay disponibles 2 carreras : CoderHouse o CodeRun. Elegir una. *Considere que el buscador no admite mayúsculas");
 
 while(elegirCarrera != "coderhouse"  && elegirCarrera !="coderun" ){
     alert("Dato erróneo")
@@ -11,6 +11,7 @@ if (elegirCarrera == "coderhouse"){
     alert(distanciasDisponiblesCoderhouse.join(" - "))
 }else if(elegirCarrera == "coderun"){
     alert("No quedan cupos para inscribirse a la carrera CodeRun, recargue la página si quiere consultar disponibilidad en Maratón CoderHouse")
+    
 }
 
 while(elegirCarrera == "coderhouse"){
@@ -37,8 +38,18 @@ while(elegirCarrera == "coderhouse"){
         carrito.push({distanciaCoderhouse,precio})
         console.log(carrito)
         alert("Gracias por su compra")
+
         carrito.forEach((carritoFinal) => {
             console.log(`distancias elegida: ${carritoFinal.distanciaCoderhouse}, total a pagar ${carritoFinal.precio}`)
+            document.body.innerHTML = `
+            <div class="card" id= card>
+                <div class="card-body text-center">
+                    <h1 class="compraFinal">Compra Realizada con éxito.</h1><br>
+                    <p>Distancia elegida : ${carritoFinal.distanciaCoderhouse}</p> <br>
+                    <p class="total">Total a pagar : ${carritoFinal.precio}</p>
+                </div>
+            </div>
+            `
         })
         break;
     }

@@ -8,43 +8,46 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">CoderTick Run</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Centro de Ayuda</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Próximas carreras
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Maratón Internacional de Mendoza</a></li>
-                  <li><a class="dropdown-item" href="#">Maratón de La Pampa</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Maratón de San Luis</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar carreras</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-danger text-white p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-semibold" href="#">CoderTick</a>
+        <button class="navbar-toggler" id="menuburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Centro de ayuda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Próximas carreras
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">CodeRun</a></li>
+                <li><a class="dropdown-item" href="#">CoderHouse</a></li>
+    
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-white" aria-disabled="true">Novedades</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light text-light outline-light" type="submit">Buscar </button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
       <header>
         <div>
-            <h1>Maratón CoderHouse</h1>
-            <h2>Desafiá tus límites</h2>
+            <h1 class="text-center my-5">Maratón Internacional <p class="my-2">CoderHouse</p></h1>
+            <p class="text-center fw-semibold fs-4">Desafiá tus límites</p>
+            <button type="button" class="btn btn-outline-danger position-absolute top-50 start-50 translate-middle my-5 fs-5">Inscripción 2024</button>
         </div>
         
       </header>
