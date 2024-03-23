@@ -1,20 +1,20 @@
 let elegirCarrera = prompt("Bienvenido, hay disponibles 2 carreras : CoderHouse o CodeRun. Elegir una. *Considere que el buscador no admite mayúsculas");
 
-while(elegirCarrera != "coderhouse"  && elegirCarrera !="coderun" ){
-    alert("Dato erróneo")
-    elegirCarrera = prompt ("Seleccione la carrera que va a correr ¿CoderHouse o coderun?")
-}
-if (elegirCarrera == "coderhouse"){
+// while(elegirCarrera != "coderhouse"  && elegirCarrera !="coderun" ){
+//     alert("Dato erróneo")
+//     elegirCarrera = prompt ("Seleccione la carrera que va a correr ¿CoderHouse o coderun?")
+// }
+if (elegirCarrera.toLowerCase() == "coderhouse"){
     alert("Estas son las distancias disponibles")
     let distanciasDisponiblesCoderhouse = distanciasCoderhouse.map((distanciasCoderhouse) => distanciasCoderhouse.nombre + "--" + distanciasCoderhouse.precio + " $" 
     );
     alert(distanciasDisponiblesCoderhouse.join(" - "))
-}else if(elegirCarrera == "coderun"){
+}else if(elegirCarrera.toLowerCase() == "coderun"){
     alert("No quedan cupos para inscribirse a la carrera CodeRun, recargue la página si quiere consultar disponibilidad en Maratón CoderHouse")
     
 }
 
-while(elegirCarrera == "coderhouse"){
+while(elegirCarrera.toLowerCase() == "coderhouse"){
     let distanciaCoderhouse = prompt("Seleccioná una distancia")
     let precio = 0
 
